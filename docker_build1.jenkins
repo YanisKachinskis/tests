@@ -1,4 +1,4 @@
-#!groovy
+\#!groovy
 // Run docker build
 properties([disableConcurrentBuilds()])
 
@@ -12,7 +12,7 @@ pipeline {
         timestamps()
     }
     stages {
-	step { "Create docker image"} {
+	step ("Create docker image") {
 	    steps {
 		echo " ============== start building ============== "
 		dir {'docker/toolbox'} {
